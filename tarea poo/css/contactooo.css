@@ -1,0 +1,147 @@
+.footer__container {
+  background-color: var(--primary-color);
+  margin: 25px 25px;
+  border-radius: 5px;
+  width: 70%;
+  margin-left: 250px;
+  height: 400px;
+}
+.content__contact {
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-right: 900px;
+  list-style: none;
+  text-align: end;
+}
+.content__title {
+  font-size: 25px;
+  margin-right: 100px;
+}
+
+.contact-data {
+  font-family: sans-serif;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.stickers {
+  margin-left: -300px;
+  justify-content: center;
+  display: flex;
+}
+
+.contact-data1 {
+  right: -8px;
+  position: absolute;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+/**/
+.main-content {
+  display: flex;
+}
+.main-content .box {
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+
+.box .content {
+  margin: 20px 0 0 0;
+  position: relative;
+  width: 300px;
+}
+
+.center .content .text {
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+.contacto1 {
+  margin-left: 35px;
+}
+
+.right form .text {
+  font-size: 15px;
+  margin-bottom: 2px;
+  color: var(--theme-color);
+}
+
+.right form .msg {
+  margin-top: 10px;
+  width: 300px;
+}
+
+.right form input,
+.right form textarea {
+  width: 100%;
+  font-size: 20px;
+  background: var(--theme-color);
+  border: 1px solid #222222;
+  height: 120px;
+  margin-right: 600px;
+}
+
+.right form input {
+  height: 22px;
+  border-radius: 3px;
+}
+.right form .btn {
+  margin-top: 10px;
+}
+.right form .btn button {
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: var(--theme-color);
+  background: var(--text-color);
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 750px) {
+  .footer__container {
+    background-color: var(--primary-color);
+    margin: 25px 25px;
+    border-radius: 5px;
+    width: 90%;
+    height: 100%;
+  }
+
+  .contact-data .contact-data1 {
+    align-items: center;
+    margin-right: 230px;
+    font-size: 15px;
+  }
+  .content__contact contact-data1 {
+    max-width: 500;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    left: 100px;
+    list-style: none;
+  }
+
+  .contacto1 {
+    margin-left: 35px;
+  }
+
+  .footer {
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box {
+    margin: 5px 0;
+    margin-left: 30px;
+  }
+}

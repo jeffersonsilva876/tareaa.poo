@@ -1,0 +1,121 @@
+.experiencia {
+  display: flex;
+  flex-direction: column;
+}
+
+.cuerpo-experiencia {
+  background-color: var(--primary-color);
+  color: var(--text-color-inverse);
+}
+
+.imagen-curva1 {
+  width: 100%;
+  position: relative;
+  top: 0.2px;
+}
+
+.imagen-curva2 {
+  transform: scaleY(-1.1);
+  top: 82px;
+}
+
+.titulo-exp {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 25px;
+}
+
+.informacion-exp {
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--secundary-color);
+}
+
+.titulo-proyecto {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+.expediente-estudiante {
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.datos-estudiante {
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.experience {
+  padding: 25px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media (min-width: 750px) {
+  .titulo-exp {
+    font-size: 50px;
+    margin: 35px 0;
+  }
+
+  .informacion-exp {
+    font-size: 40px;
+  }
+
+  .titulo-proyecto {
+    font-size: 25px;
+  }
+
+  .expediente-estudiante {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .datos-estudiante {
+    font-size: 20px;
+    margin-top: 10px;
+    line-height: 1.3;
+  }
+
+  .experiencia {
+    padding: 0;
+  }
+
+  .experiencia-contenido {
+    text-align: right;
+  }
+
+  .experiencia-exp {
+    display: grid;
+    grid-template-columns: auto 5px auto;
+    gap: 20px 70px;
+    padding: 30px;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .linea {
+    background-color: var(--text-color-inverse);
+    position: relative;
+  }
+
+  .linea::before,
+  .linea::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -20px;
+    left: -9px;
+    background-color: var(--theme-color);
+    border-radius: 50%;
+  }
+}
